@@ -16,3 +16,9 @@
 .groupContainer {
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.active{
+  color: #fde9cb;
+  text-shadow: var(--Header-text-shadow);
+  transform: scale(1.8);
+}

@@ -27,4 +27,3 @@ function Layout({ children }) {
 
 export default Layout;
 
-//  Hey, I'm Mukhtar! 👋

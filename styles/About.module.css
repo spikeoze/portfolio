@@ -1,0 +1,47 @@
+.container {
+  width: 450px;
+  height: 600px;
+  margin: 3rem auto;
+  border: 5px dashed var(--links-color);
+  box-shadow: var(--dark-shadow);
+  padding: 0.5rem;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 350px;
+    height: 550px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 330px;
+    height: 550px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+.group {
+  font-family: var(--links-header-font);
+  color: var(--text-color);
+}
+
+.group h2 {
+  margin-top: -6rem;
+  font-size: 30px;
+}
+
+.group p {
+  margin-top: -1rem;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.mukhtar {
+  color: #fde9cb;
+  text-shadow: 1px 1px #f90, 2px 2px rgb(255, 158, 13);
+}

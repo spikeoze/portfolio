@@ -13,7 +13,7 @@
   --solid-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   --dark-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  --light-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --light-shadow: rgba(42, 43, 44, 0.2) 0px 8px 24px;
   --Header-text-shadow: 1px 1px #f90, 2px 2px rgb(255, 158, 13), 3px 3px rgb(253, 162, 25), 4px 4px rgb(252, 167, 40),
     5px 5px rgb(250, 177, 67), 6px 6px rgb(250, 192, 106), 7px 7px rgb(247, 200, 130);
 }
