@@ -5,6 +5,7 @@ import { useReducer } from "react";
 import { useGlobalContext } from "../components/context";
 import AboutMe from "../components/AboutMe";
 import ContactTab from "../components/ContactTab";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const { Aboutme, Project, Contact } = useGlobalContext();
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       {Aboutme && <AboutMe />}
       {Contact && <ContactTab />}
+      {Project && <Projects />}
     </>
   );
 }

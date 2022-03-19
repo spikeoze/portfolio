@@ -5,7 +5,13 @@ import style from "../styles/Tabs.module.css";
 
 function AboutMe() {
   return (
-    <div className={style.container}>
+    <motion.div
+      animate={{
+        y: [50, 5],
+      }}
+      transition={{ ease:"backOut", duration: 0.3 }}
+      className={`${style.container} ${style.scroll}`}
+    >
       <Group position="center" direction="column" className={style.group}>
         <motion.div
           animate={{
@@ -15,8 +21,7 @@ function AboutMe() {
           }}
           transition={{
             type: "spring",
-            duration: 2,
-
+            duration: 3,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -40,8 +45,7 @@ function AboutMe() {
           libraries like Mantaine, Framer Motion, etc.
         </p>
       </Group>
-
-    </div>
+    </motion.div>
   );
 }
 

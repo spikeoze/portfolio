@@ -36,26 +36,34 @@ function Header() {
       }}
       className={style.groupContainer}
     >
-      {links.map((link) => {
-        const { id, name } = link;
-        return (
-          <motion.div
-            transition={trasition}
-            whileHover={Active !== name ? hover : { scale: 1 }}
-            onClick={(e) => {
-              handleClick(e.target.id);
-              open(e.target.id);
-              setActive(name);
-            }}
-            className={style.links}
-            key={id}
-          >
-            <p id={id} className={Active === name ? `${style.active}` : ""}>
-              {name}
-            </p>
-          </motion.div>
-        );
-      })}
+      <motion.div
+        animate={{
+          x: [-30, 0],
+          opacity: [0, 1],
+        }}
+        transition={{duration: 1}}
+      >
+        {links.map((link) => {
+          const { id, name } = link;
+          return (
+            <motion.div
+              transition={trasition}
+              whileHover={Active !== name ? hover : { scale: 1 }}
+              onClick={(e) => {
+                handleClick(e.target.id);
+                open(e.target.id);
+                setActive(name);
+              }}
+              className={style.links}
+              key={id}
+            >
+              <p id={id} className={Active === name ? `${style.active}` : ""}>
+                {name}
+              </p>
+            </motion.div>
+          );
+        })}
+      </motion.div>
     </Group>
   );
 }

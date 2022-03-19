@@ -4,9 +4,15 @@ import { Center, Group, Image, Grid, Card } from "@mantine/core";
 import style from "../styles/Tabs.module.css";
 import { GrTwitter, GrGithub } from "react-icons/gr";
 
-function AboutMe() {
+function Contact() {
   return (
-    <div className={style.container}>
+    <motion.div
+      animate={{
+        y: [50, 5],
+      }}
+      transition={{ ease: "backOut", duration: 0.3 }}
+      className={`${style.container} ${style.scroll}`}
+    >
       <Group position="center" direction="column" className={style.group}>
         <motion.div
           animate={{
@@ -16,8 +22,7 @@ function AboutMe() {
           }}
           transition={{
             type: "spring",
-            duration: 2,
-
+            duration: 5,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -53,8 +58,8 @@ function AboutMe() {
           </Grid.Col>
         </Grid>
       </Group>
-    </div>
+    </motion.div>
   );
 }
 
-export default AboutMe;
+export default Contact;
