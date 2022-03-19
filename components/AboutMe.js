@@ -29,7 +29,7 @@ function AboutMe() {
           <Image
             src="/images/tony.png"
             alt="logo"
-            style={{ transform: "scale(0.4)", marginTop: "-5rem" }}
+            style={{ transform: "scale(0.5)", marginTop: "-2rem" }}
           />
         </motion.div>
         <h2>

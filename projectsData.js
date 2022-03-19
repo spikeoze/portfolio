@@ -7,4 +7,5 @@ export const projects = [
       "A nicely design calculator made with React, Mantaine, Framer Motion",
     link: "https://nicelookingcalculator.netlify.app/",
   },
+ 
 ];

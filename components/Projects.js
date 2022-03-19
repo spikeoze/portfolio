@@ -40,15 +40,7 @@ function Projects() {
         {projects.map((project) => {
           const { id, name, description, link, img } = project;
           return (
-            <Card
-              p="lg"
-              style={{
-                backgroundColor: "#f0a500",
-                width: 340,
-              }}
-              className={style.projecCard}
-              key={id}
-            >
+            <Card p="lg" className={style.projecCard} key={id}>
               <Card.Section>
                 <Image src={img} height={160} alt="calculator" />
               </Card.Section>
@@ -61,8 +53,9 @@ function Projects() {
                 {name}
               </Text>
 
-              <p>{description}</p>
-
+              <Text>
+                <p>{description}</p>
+              </Text>
               <a target="_blank" rel="noreferrer" href={link}>
                 <Button fullWidth className={style.btn}>
                   View
