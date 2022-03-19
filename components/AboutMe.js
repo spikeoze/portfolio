@@ -28,7 +28,7 @@ function AboutMe() {
           />
         </motion.div>
         <h2>
-          Hey, I'm <span className={style.mukhtar}>Mukhtar</span> 👋
+          Hey, I&apos;m <span className={style.mukhtar}>Mukhtar</span> 👋
         </h2>
 
         <p>
