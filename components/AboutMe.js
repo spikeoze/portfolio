@@ -32,7 +32,7 @@ function AboutMe() {
         </h2>
 
         <p>
-          I'm a full stack web developer currently studying Information
+          I am a full stack web developer currently studying Information
           Technology at Simad University.
         </p>
         <p>
