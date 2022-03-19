@@ -47,7 +47,7 @@
 }
 
 .contactGrid {
-  margin-top: -4rem;
+  margin-top: -6rem;
   text-shadow: var(--dark-shadow);
 }
 
@@ -58,9 +58,34 @@
   text-shadow: var(--dark-shadow);
 }
 
+
 .card {
   width: 150px;
   padding: 6px;
   background-color: var(--links-color);
   color: var(--text-color);
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 350px;
+    height: 550px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .card {
+    width: 130px;
+    padding: 5px;
+  }
+  .contactLogo{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    width: 330px;
+    height: 550px;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
 }
