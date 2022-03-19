@@ -13,7 +13,7 @@ function Header() {
       direction="column"
       position="center"
       style={{
-        marginTop: Clicked ? "3rem" : "13rem",
+        marginTop: Clicked ? "3rem" : "15rem",
       }}
       className={style.groupContainer}
     >
