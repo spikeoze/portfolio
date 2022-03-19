@@ -45,3 +45,22 @@
   color: #fde9cb;
   text-shadow: 1px 1px #f90, 2px 2px rgb(255, 158, 13);
 }
+
+.contactGrid {
+  margin-top: -4rem;
+  text-shadow: var(--dark-shadow);
+}
+
+.contactLogo {
+  cursor: pointer;
+  font-size: 4rem;
+  margin: 1rem;
+  text-shadow: var(--dark-shadow);
+}
+
+.card {
+  width: 150px;
+  padding: 6px;
+  background-color: var(--links-color);
+  color: var(--text-color);
+}

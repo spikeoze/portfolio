@@ -4,6 +4,7 @@
   text-shadow: var(--solid-shadow);
   font-family: var(--links-header-font);
   margin: -5px;
+  padding: 0.5rem 0;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -13,12 +14,20 @@
   color: #fde9cb;
 }
 
-.groupContainer {
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.active{
+.links .active {
   color: #fde9cb;
   text-shadow: var(--Header-text-shadow);
   transform: scale(1.8);
 }
+
+.groupContainer {
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-height: 420px) {
+  .groupContainer {
+    margin-top: 6rem !important;
+  }
+}
+
+

@@ -13,7 +13,8 @@ function Header() {
   ];
 
   const [Clicked, setClicked] = useState(false);
-  const { open } = useGlobalContext();
+  const [Active, setActive] = useState("home");
+  const { open, Aboutme, Project, Contact } = useGlobalContext();
   const trasition = { type: "spring", duration: 0.2, bounce: 0.6 };
   const hover = { scale: 1.8 };
   const marginTop = "5rem";
@@ -25,7 +26,6 @@ function Header() {
       setClicked(true);
     }
   };
-
 
   return (
     <Group
@@ -41,15 +41,18 @@ function Header() {
         return (
           <motion.div
             transition={trasition}
-            whileHover={hover}
+            whileHover={Active !== name ? hover : { scale: 1 }}
             onClick={(e) => {
               handleClick(e.target.id);
               open(e.target.id);
+              setActive(name);
             }}
             className={style.links}
             key={id}
           >
-            <p id={id}>{name}</p>
+            <p id={id} className={Active === name ? `${style.active}` : ""}>
+              {name}
+            </p>
           </motion.div>
         );
       })}

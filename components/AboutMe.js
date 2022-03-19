@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Center, Group, Image } from "@mantine/core";
-import style from "../styles/About.module.css";
+import style from "../styles/Tabs.module.css";
 
 function AboutMe() {
   return (
@@ -40,6 +40,7 @@ function AboutMe() {
           libraries like Mantaine, Framer Motion, etc.
         </p>
       </Group>
+
     </div>
   );
 }
