@@ -1,0 +1,18 @@
+.links p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-shadow: var(--solid-shadow);
+  font-family: var(--links-header-font);
+  margin: -5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.links p:hover {
+  text-shadow: var(--Header-text-shadow);
+  color: #fde9cb;
+}
+
+.groupContainer {
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
