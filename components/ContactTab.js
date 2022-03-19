@@ -31,14 +31,22 @@ function AboutMe() {
         <Grid className={style.contactGrid} gutter="xl">
           <Grid.Col span={6}>
             <Card className={style.card}>
-              <a target="_blank" href="https://twitter.com/mukhtxxr">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/mukhtxxr"
+              >
                 <GrTwitter className={style.contactLogo} />
               </a>
             </Card>
           </Grid.Col>
           <Grid.Col span={6}>
             <Card className={style.card}>
-              <a target="_blank" href="https://github.com/spikeoze">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/spikeoze"
+              >
                 <GrGithub className={style.contactLogo} />
               </a>
             </Card>
