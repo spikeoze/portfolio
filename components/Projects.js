@@ -57,9 +57,14 @@ function Projects() {
                 <p>{description}</p>
               </Text>
               <a target="_blank" rel="noreferrer" href={link}>
-                <Button fullWidth className={style.btn}>
-                  View
-                </Button>
+                <motion.div
+                  whileHover={{ scale: 1.03}}
+                  trasition={{ type: "spring", duration: 0.5, bounce: 0.6 }}
+                >
+                  <Button fullWidth className={style.btn}>
+                    View
+                  </Button>
+                </motion.div>
               </a>
             </Card>
           );

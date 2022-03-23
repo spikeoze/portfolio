@@ -69,13 +69,13 @@
 
 .btn {
   margin-top: 14px;
-  background-color: var(--links-color);
+  background-color: var(--links-hover);
   color: #e6d5b8;
   box-shadow: var(--solid-shadow);
 }
 
 .btn:hover {
-  background-color: var(--links-hover);
+  background-color:#e45723;
 }
 
 @media screen and (max-width: 500px) {

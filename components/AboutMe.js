@@ -21,7 +21,7 @@ function AboutMe() {
           }}
           transition={{
             type: "spring",
-            duration: 3,
+            duration: 5,
             repeat: Infinity,
             repeatType: "reverse",
           }}
@@ -29,7 +29,7 @@ function AboutMe() {
           <Image
             src="/images/tony.png"
             alt="logo"
-            style={{ transform: "scale(0.5)", marginTop: "-2rem" }}
+            style={{ transform: "scale(0.5)", marginTop: "-4rem" }}
           />
         </motion.div>
         <h2>
